@@ -1,0 +1,29 @@
+.navbarAvatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 5px;
+}
+.nav-link {
+    font-weight: bold;
+    border-radius: 35px;
+    width: 120px;
+    margin-right: 5px;
+    text-align: center;
+    border: 1px solid transparent;
+}
+.nav-link:hover {
+    font-weight: bold;
+    border-radius: 35px;
+    width: 120px;
+    margin-right: 5px;
+    text-align: center;
+    border: 1px solid darkgray;
+}
+.navbarToggleBtn {
+    border: 0px solid transparent;
+    background-color: transparent;
+}
+
+.navbarToggleBtn {
+    border: 1px solid darkgray;
+}

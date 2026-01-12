@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <h1>Welcome</h1><br>
+            <p>I'm Antonio Labellarte</p>
+        </div>
+        <div class="col-sm" style="border: 2px solid gray; border-radius: 10px;">
+            <img class="myPhoto" src="https://media.licdn.com/media/AAYQAQSOAAgAAQAAAAAAAB-zrMZEDXI2T62PSuT6kpB6qg.png">
+            <p>Italy, Bari Puglia</p>
+            <p>Currently <strong>Mid Software Developer at Studio Cicchelli S.r.l.</strong></p>
+            <p>Stack:</p>
+            <span class="stack" *ngFor="let stacks of stack">
+                {{ stacks.id }}
+            </span>
+        </div>
+    </div>
+</div>
