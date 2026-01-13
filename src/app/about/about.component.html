@@ -1,32 +1,61 @@
+<section id="top"></section>
 <div class="container">
     <div class="row">
+        <div>
+            <a href="#" style="color: darkgreen;">• INTRODUCTION</a><br>
+            <a href="#" style="color: darkgreen;">• MY WORKS</a><br>
+            <a href="#" style="color: darkgreen;">• EXPERIENCES</a><br>
+        </div>
         <div class="col">
             <h3>// Introduction</h3>
-            <p>
-                Graduated in Business Information Systems (SIA) at ITES Lenoci in Bari.
+            <p style="border-radius: 10px; border: 1px solid gray; padding: 10px;">
+                Graduated in Business Information Systems (SIA) at ITES Lenoci in Bari.<br>
                 I completed a training course with the organization Informa Scarl to obtain a professional qualification as a web and software developer (EQF Level 4 of the European Qualifications Framework).
-                My professional goals are focused on the IT sector, web development, and software development.
+                My professional goals are focused on the IT sector, web development, and software development.<br>
+
+                Before starting my career in software development, I gained professional experience as an Administrative Assistant in a wholesale tax warehouse for salts, tobacco products, and stationery items. In this role, I worked with SAP software, managed inventory reorganization, and supported logistics and goods delivery processes. This experience helped me develop a strong understanding of business workflows and operational efficiency.
+
+            I later transitioned into software development, beginning my career as an AS/400 developer, where I built a solid foundation in enterprise systems and structured programming.
+            Currently, I work in an IT consulting company as a mid-level low-code developer, primarily using the Microsoft Power Platform ecosystem, including Power Apps, Power BI, and SharePoint, to design and deliver business-oriented digital solutions.
+
+            Alongside my low-code experience, I am increasingly focused on full-code development. I actively work with technologies such as Laravel, Angular, Java with Spring, and modern web languages, aiming to build scalable, maintainable, and high-quality applications while continuously growing as a developer.
             </p>
         </div>
     </div>
     <div class="row">
         <div class="col">
-            <h3> // My Works</h3>
-            <p *ngFor="let work of works">
-                <b> // {{ work.name }}</b><br>
+            <h3>
+                // My Works
+            </h3>
+            <div *ngFor="let work of works" style="margin-bottom: 10px; border: 1px solid gray; padding: 10px; border-radius: 10px;">
+                <b class="customTitle">{{ work.name }}</b><br>
                 {{ work.description }}<br>
-
-                <b>-> Overview</b><br>
-            </p>
+                <hr>
+                GitHub work stack: {{ work.GitHubStack }} <br>                
+                <small><i>Original work stack: {{ work.originalStack }}</i></small>
+                <a class="goToGitHubBtn" [href]="work.url">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg>
+                    &nbsp;Look on GitHub&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/></svg>
+                </a>
+            </div>
         </div>
     </div>
-    <h3> // Experiences</h3>
+    <h3><b>// Experiences</b></h3>
     <div class="row" *ngFor="let experience of experiences">
         <div class="col-sm">
             <img class="enterpriseIcon" [src]="experience.icon">
         </div>
         <div class="col-sm">
-            {{ experience.enterprise }}
-        </div>                
+            <b class="customTitle">{{ experience.enterprise }}</b>
+            <i>• {{ experience.date }}</i><br>
+            • <b>{{ experience.role }}</b><br>
+            • {{ experience.description }}
+        </div>
+        <hr>
     </div>
 </div>
+
+<button (click)="scrollToTop()" id="scrollTopBtn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/></svg>
+</button>

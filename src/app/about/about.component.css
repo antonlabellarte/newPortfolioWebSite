@@ -1,6 +1,12 @@
+h3 {
+    font-weight: bold;
+}
+
 .enterpriseIcon {
-    border-radius: 7px;
+    border-radius: 10px;
     border: 1.5px solid darkgray;
+    width: 202px;
+    height: 202px;
 }
 
 .row {
@@ -10,4 +16,56 @@
 
 .col-sm {
     margin-bottom: 10px;
+}
+
+.goToGitHubBtn {
+    transition: 0.2s;
+    border: 4px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 15px;
+    display: flex;
+    width: fit-content;
+}
+
+.customTitle {
+    background-color: #333;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    width: fit-content;
+    color: white;
+}
+
+.work {
+    border: 1px solid #333;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#scrollTopBtn {
+  display: block;
+  position: fixed;
+  bottom: 70px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#scrollTopBtn:hover {
+  background-color: #555;
 }

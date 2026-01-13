@@ -3,11 +3,13 @@
 }
 
 .myPhoto {
-    width: 64px;
-    height: 64px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 5px;
 }
 
-.stack {
+.stacks {
     display: flex;
     flex-wrap: wrap;
 }
@@ -17,23 +19,35 @@
     height: 24px;
 }
 
-.mailMeBtn, .portfolioBtn {
+.links {
+    transition: 0.2s;
     display: flex;
-    width: 150px;
+    width: fit-content;
     color: black;
     text-decoration: none;
     border: 1px solid lightgray;
     background-color: whitesmoke;
-    border-radius: 2px;
+    border-radius: 4px;
     padding: 5px;
 }
 
-.mailMeBtn:hover, .portfolioBtn:hover {
-    outline: 1px solid black;
+.links:hover {
+    transition: 0.2s;
+    background-color: darkgray;
 }
 
-.downloadCVBtn {
-    border: 1px solid darkgray;
-    margin-right: 5px;
+#card {
     background-color: whitesmoke;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card-header svg {
+    margin: 2px;
+}
+
+.card-header {
+    background-color: #333;
+    outline: 1px solid #333;
 }
