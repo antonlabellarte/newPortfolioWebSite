@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h3>// Introduction</h3>
+            <p>
+                Graduated in Business Information Systems (SIA) at ITES Lenoci in Bari.
+                I completed a training course with the organization Informa Scarl to obtain a professional qualification as a web and software developer (EQF Level 4 of the European Qualifications Framework).
+                My professional goals are focused on the IT sector, web development, and software development.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h3> // My Works</h3>
+            <p *ngFor="let work of works">
+                <b> // {{ work.name }}</b><br>
+                {{ work.description }}<br>
+
+                <b>-> Overview</b><br>
+            </p>
+        </div>
+    </div>
+    <h3> // Experiences</h3>
+    <div class="row" *ngFor="let experience of experiences">
+        <div class="col-sm">
+            <img class="enterpriseIcon" [src]="experience.icon">
+        </div>
+        <div class="col-sm">
+            {{ experience.enterprise }}
+        </div>                
+    </div>
+</div>

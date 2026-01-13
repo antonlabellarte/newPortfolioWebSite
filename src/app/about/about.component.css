@@ -1,0 +1,13 @@
+.enterpriseIcon {
+    border-radius: 7px;
+    border: 1.5px solid darkgray;
+}
+
+.row {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.col-sm {
+    margin-bottom: 10px;
+}

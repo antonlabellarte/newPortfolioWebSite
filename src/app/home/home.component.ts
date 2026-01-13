@@ -10,11 +10,11 @@ import { NgFor } from '@angular/common';
 })
 export class HomeComponent {
   stack = [
-    {id: 'HTML'},
-    {id: 'CSS'},
-    {id: 'JavaScript'},
-    {id: 'php'},
-    {id: 'Laravel'},
-    {id: 'Angular'},
+    {id: 'HTML', icon: 'assets/codesIcons/html.png' },
+    {id: 'CSS', icon: 'assets/codesIcons/css.png'},
+    {id: 'JavaScript', icon: 'assets/codesIcons/js.png'},
+    {id: 'php', icon: 'assets/codesIcons/php.png'},
+    {id: 'Laravel', icon: 'assets/codesIcons/laravel.png'},
+    {id: 'Angular', icon: 'assets/codesIcons/angular.png'},
   ]
 }

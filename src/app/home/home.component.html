@@ -1,17 +1,58 @@
 <div class="container">
     <div class="row">
         <div class="col-sm">
-            <h1>Welcome</h1><br>
-            <p>I'm Antonio Labellarte</p>
+            <h1>// Welcome</h1><br>
+            <p><strong>I'm Antonio Labellarte</strong></p>
+            <p>Middle developer with experience in designing and building web applications and digital solutions. Passionate about technology and problem solving, I focus on turning complex requirements into scalable, intuitive, and valuable solutions.
+                Committed to continuous learning and knowledge sharing as key drivers for growth and tackling new challenges.
+                Motivated by opportunities to contribute to innovative projects, optimize processes, and improve user experiences through software.
+            </p>
+            <p>
+                Open to opportunities that allow me to further develop both technical expertise and soft skills in a dynamic, results-driven environment.
+            </p>
+            <p>
+                <a class="portfolioBtn" href="https://github.com/antonlabellarte">
+                    <span style="float: left;">📍</span>
+                    <span style="float: right;">PORTFOLIO</span>
+                </a>
+            </p>
+            <p>
+                <button class="mailMeBtn">
+                    <span style="float: left;">
+                        📧
+                    </span>
+                    <span style="float: right;">MAIL ME</span>
+                </button>
+            </p>
+            <p>
+                Download my CV
+                <button class="mailMeBtn" style="margin-bottom: 10px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/></svg>
+                    &nbsp;EN
+                </button>
+                <button class="mailMeBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/></svg>
+                    &nbsp;IT
+                </button>
+            </p>
         </div>
-        <div class="col-sm" style="border: 2px solid gray; border-radius: 10px;">
-            <img class="myPhoto" src="https://media.licdn.com/media/AAYQAQSOAAgAAQAAAAAAAB-zrMZEDXI2T62PSuT6kpB6qg.png">
-            <p>Italy, Bari Puglia</p>
-            <p>Currently <strong>Mid Software Developer at Studio Cicchelli S.r.l.</strong></p>
+        <div class="col-sm" style="border: 1px solid black; border-radius: 7.5px; padding: 5px;">
+            <img class="myPhoto" src="https://media.licdn.com/media/AAYQAQSOAAgAAQAAAAAAAB-zrMZEDXI2T62PSuT6kpB6qg.png"><br>
+            <p>
+                <svg style="border-radius: 5px;" width="50" height="20" viewBox="0 0 3 2" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="1" height="2" fill="#009246"/><rect x="1" y="0" width="1" height="2" fill="#FFFFFF"/><rect x="2" y="0" width="1" height="2" fill="#CE2B37"/></svg>
+                Italy, Bari Puglia
+            </p><br>
+            <p>
+                <strong>Mid Software Developer</strong>
+                &#64;<a href="https://www.studiocicchelli.net/">Studio Cicchelli S.r.l.</a><br>
+
+                <strong>Previously</strong>
+                &#64;<a href="https://www.cssnet.it/">Computer Sharing Sud S.r.l.</a><br>
+            </p><br>
             <p>Stack:</p>
-            <span class="stack" *ngFor="let stacks of stack">
-                {{ stacks.id }}
-            </span>
+            <div class="stacks" *ngFor="let stacks of stack">                
+                <img [src]="stacks.icon" style="margin-bottom: 2px;"> {{ stacks.id }}
+            </div>
         </div>
     </div>
 </div>
